@@ -1,6 +1,6 @@
 #!/bin/bash
 echo 'Linking the vimrc...'
-ln -s ~/.vim/.vimrc ~/.vimrc
+ln -s ~/.vim/vimrc ~/.vimrc
 
 echo 'Cloning Vundle vim plugin...'
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle

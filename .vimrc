@@ -1,7 +1,6 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -39,6 +38,10 @@ Bundle 'kchmck/vim-coffee-script'
 " Less Highlighting
 " https://github.com/groenewege/vim-less
 Bundle 'groenewege/vim-less'
+
+" Syntastic
+" https://github.com/scrooloose/syntastic
+Bundle "https://github.com/scrooloose/syntastic.git"
 
 filetype plugin indent on     " required
 " To ignore plugin indent changes, instead use:
@@ -134,6 +137,19 @@ set tw=500
 set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
+
+""""""""""""""""""""""""""""""
+" => Syntastic bits 
+""""""""""""""""""""""""""""""
+" Syntastic plugin configuration
+"
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1 
+
+let g:syntastic_html_checkers = ['w3']
+let g:syntastic_javascript_checkers = ['jshint']
 
 """"""""""""""""""""""""""""""
 " => Visual mode related

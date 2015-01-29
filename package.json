@@ -3,6 +3,10 @@
 	"version": "1.0.0",
 	"description": "A vim configuration for GUI and CLI based vim editing for code of coolness",
 	"author": "Justin Bastedo <justin.bastedo@gmail.com>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/thebastedo/vimrc"
+	},
 	"scripts": {
 		"preinstall": "npm i -g jshint"
 	}

@@ -43,6 +43,14 @@ Bundle 'groenewege/vim-less'
 " https://github.com/scrooloose/syntastic
 Bundle "https://github.com/scrooloose/syntastic.git"
 
+" Neocomplcache
+" https://github.com/Shougo/neocomplcache.vim
+Bundle "https://github.com/Shougo/neocomplcache.vim.git"
+
+" Solarized Color Scheme
+" https://github.com/altercation/vim-colors-solarized
+Bundle "https://github.com/altercation/vim-colors-solarized.git"
+
 filetype plugin indent on     " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
@@ -117,7 +125,12 @@ set incsearch
 "
 " Vanity stuff
 "
-colorscheme desert
+" colorscheme desert
+colorscheme solarized
+let g:solarized_termcolors=256
+
+" enable NeoComplete with Cache 
+let g:neocomplcache_enable_at_startup = 1
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -148,8 +161,11 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1 
 
-let g:syntastic_html_checkers = ['w3']
+let g:syntastic_html_checkers = ['tidy']
 let g:syntastic_javascript_checkers = ['jshint']
+
+" Silence some html warnings I don't care about
+let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute ", "trimming empty "]
 
 """"""""""""""""""""""""""""""
 " => Visual mode related

@@ -30,6 +30,7 @@ Bundle 'https://github.com/mattn/emmet-vim.git'
 
 " Powerline
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+" Bundle "https://github.com/powerline/powerline"
 
 " Coffee Script
 " https://github.com/kchmck/vim-coffee-script

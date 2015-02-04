@@ -312,7 +312,7 @@ nmap <leader>s<down>   :rightbelow new<CR>
 " Coding Style Stuff
 set nu!
 set colorcolumn=120
-set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+set listchars=eol:¬,tab:▸\ ,trail:~,extends:>,precedes:<
 map <leader>ll :setlocal list!<cr>
 " For indentation purely with hard tabs, the principle is to set 'tabstop' and 'shiftwidth' to the same value, and to 
 " leave 'expandtab' at its default value ('noexpandtab'), and leave 'softtabstop' unset

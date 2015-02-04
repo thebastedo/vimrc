@@ -32,7 +32,10 @@ $ cd ~/.vim && ./setup.sh
 ```
 
 ### Step 3
+Install a Powerline friendly font available from here: [Powerline Fonts](https://github.com/powerline/fonts)
+
+### Step 4
 ?
 
-### Step 4 
+### Step 5 
 PROFIT!

@@ -37,6 +37,12 @@ Plugin 'groenewege/vim-less'
 " Syntastic
 Plugin 'scrooloose/syntastic'
 
+" Coffeescript syntax
+Plugin 'kchmck/vim-coffee-script'
+
+" Emblem syntax
+Bundle 'heartsentwined/vim-emblem'
+
 " Tools
 
 " Airline (powerline but in vim )

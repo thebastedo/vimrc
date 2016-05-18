@@ -26,19 +26,25 @@ $ git clone https://github.com/thebastedo/vimrc.git ~/.vim
 ```
 
 ### Step 2
-Run the setup script
+Link the vimrc into where it should be
 ```bash
 $ ln -s ~/.vim/vimrc ~/.vimrc
 ```
 
 ### Step 3
-Install a Powerline friendly font available from here: [Powerline Fonts](https://github.com/powerline/fonts)
+Install vundle [https://github.com/VundleVim/Vundle.vim]
+```bash
+$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
 
 ### Step 4
+Install a Powerline friendly font available from here: [Powerline Fonts](https://github.com/powerline/fonts)
+
+### Step 5
 Start vim and install plugins
 ```bash
 $ vim +PluginInstall +qall
 ```
 
-### Step 5 
-PROFIT!
+### Step 6 
+EDIT!

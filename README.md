@@ -28,14 +28,17 @@ $ git clone https://github.com/thebastedo/vimrc.git ~/.vim
 ### Step 2
 Run the setup script
 ```bash
-$ cd ~/.vim && ./setup.sh
+$ ln -s ~/.vim/vimrc ~/.vimrc
 ```
 
 ### Step 3
 Install a Powerline friendly font available from here: [Powerline Fonts](https://github.com/powerline/fonts)
 
 ### Step 4
-?
+Start vim and install plugins
+```bash
+$ vim +PluginInstall +qall
+```
 
 ### Step 5 
 PROFIT!
